@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lecture_5.css">
+    <title>Document</title>
+    <style>
+        /* universal selector */
+*{
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* element selector */
+p{
+    text-align: center;             
+}
+
+/* id selector */
+#myParagraph{
+    color: rgb(136, 255, 0);
+}
+
+/* class selector */
+.center{
+    background-color: brown;
+}
+
+/* grouping selector */
+h1, h2, h3, h4, h5{
+    text-align: center;
+}
+
+
+div p{
+    color: rgb(60, 0, 255);
+}
+div > p{
+    background-color: aquamarine;
+}
+
+/* adjacent selector */
+div + p{
+    background-color: rgb(41, 228, 24);
+}
+
+/* pseudoclass selector */
+div + p:hover{
+    background-color: aquamarine;
+}
+
+div + p::first-letter{
+    color: rgb(226, 43, 43);
+}
+
+/* attribute selector */
+a[target]{
+    background-color: rgb(0, 68, 255);
+    color: aquamarine;
+}
+    </style>
+</head>
+<body>
+    <h1>heading 1 </h1>
+    <h2>heading 2 </h2>
+    <h3>heading 3 </h3>
+    <h4>heading 4 </h4>
+    <h5>heading 5 </h5>
+    <p id="myParagraph" class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum earum dignissimos perspiciatis quaerat eius tempore corporis maxime consectetur molestiae.</p>
+
+    <hr>
+
+    <div>
+        <p>
+            hey there
+        </p>
+        <section>
+            <p>
+                my name is shivam
+            </p>
+        </section>
+    </div>
+    <hr>
+    <div>
+        <p>para 1</p>
+        <p>para 2</p>
+    </div>
+    <p>para 3</p>
+    <p>para 4</p>
+    <hr>
+    <div>
+        <a href="https://www.facebook.com/">facebook</a>
+        <a href="https://www.google.com/" target="_blank">Google</a>
+    </div>
+</body>
+</html>
